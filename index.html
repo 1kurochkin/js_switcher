@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>JS_switcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="bg-info">
+<h1 class="mega_title text-white col-12">Версия для более маленьких экранов еще не готова! :( </h1>
+<div class="container p-4">
+    <div class="row text-white">
+        <div class="col-12 text-center"><h1>JS-switcher</h1></div>
+    </div>
+    <div class="row text-white">
+        <div class="row col-12 justify-content-center">
+            <div class="col-9 p-2 mb-4 text-center mt-5 border rounded">
+                <h2>Почему у нас учить Английский выгодно?</h2>
+            </div>
+        </div>
+        <div class="row col-12 compare-range pt-3 pb-5">
+            <div class="row col-12 col-lg-12 pl-0 pr-3 d-flex justify-content-around pb-2" id="started">
+                <div class="level p-0 col-lg-2 change_range">Текущий уровень</div>
+                <div class="beginner p-0 col-lg-1 change_range" data-level="0">Beginner</div>
+                <div class="elementary text-center p-0 ml-2 col-lg-1 change_range" data-level="1">Elementary</div>
+                <div class="pre text-center p-0 col-lg-2 change_range" data-level="2">Pre-Intermediate</div>
+                <div class="intermediate p-0 col-lg-1 change_range" data-level="3">Intermediate</div>
+                <div class="upper text-center p-0 col-lg-2 change_range" data-level="4">Upper Intermediate</div>
+                <div class="advanced text-center p-0 col-lg-1 change_range" data-level="5">Advanced</div>
+            </div>
+            <div class="row col-12 mb-4">
+                <input class="range" type="range" id="start" name="start"
+                       min="0" max="5" value="0">
+            </div>
+            <div class="row col-12 col-lg-12 pl-0 pr-3 d-flex justify-content-around pb-2">
+                <div class="level p-0 col-lg-2 change_range">Желаемый уровень</div>
+                <div class="beginner p-0 col-lg-1 change_range" data-level="0">Beginner</div>
+                <div class="elementary text-center p-0 ml-2 col-lg-1 change_range" data-level="1">Elementary</div>
+                <div class="pre text-center p-0 col-lg-2 change_range" data-level="2">Pre-Intermediate</div>
+                <div class="intermediate p-0 col-lg-1 change_range" data-level="3">Intermediate</div>
+                <div class="upper text-center p-0 col-lg-2 change_range" data-level="4">Upper Intermediate</div>
+                <div class="advanced text-center p-0 col-lg-1 change_range" data-level="5">Advanced</div>
+            </div>
+            <div class="row col-12">
+                <input class="range" type="range" id="end" name="end"
+                       min="0" max="5" value="1" step="1">
+            </div>
+        </div>
+    </div>
+    <div class="row col-12 text-white">
+        <div class="compare-result">
+            <div class="compare-result__this mr-3 p-3 border rounded">
+                <div class="compare-result__title text-center mb-2">
+                    <h3>Наша школа</h3>
+                </div>
+                <div class="compare-result__info">
+                    <div class="compare-result__dayblock">
+                        <div class="compare-result__big day_this">1 месяц</div>
+                        <div class="compare-result__small text-warning">Затратите</div>
+                    </div>
+                    <div class="compare-result__money">
+                        <div class="compare-result__big money_this">12500 руб.</div>
+                        <div class="compare-result__small text-warning">Вложения</div>
+                    </div>
+                </div>
+            </div>
+            <div class="compare-result__other p-3 border rounded">
+                <div class="compare-result__title text-center mb-2">
+                    <h3>Другие школы</h3>
+                </div>
+                <div class="compare-result__info">
+                    <div class="compare-result__dayblock">
+                        <div class="compare-result__big day_other">4 месяца</div>
+                        <div class="compare-result__small text-warning">Затратите</div>
+                    </div>
+                    <div class="compare-result__money">
+                        <div class="compare-result__big money_other">30000 руб.</div>
+                        <div class="compare-result__small text-warning">Вложения</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--compare-->
+
+<script src="./script.js"></script>
+</body>
+</html>
