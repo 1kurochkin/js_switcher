@@ -1,1 +1,1 @@
-# js_switcher
+Follow to https://flexwappa.github.io/js_switcher/
