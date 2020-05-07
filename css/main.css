@@ -8,7 +8,7 @@ html {
     box-sizing: inherit;
 }
 
-.mega_title {
+.sorry {
     display: none;
 }
 
@@ -311,12 +311,8 @@ h1, h2, h3, p {
         display: none;
         /*background: #6b94ff !important;*/
     }
-    .mega_title {
+    .sorry {
         display: block !important;
-    }
-
-    .mega_title {
-    display: none;
     }
 
     .compare-range {
